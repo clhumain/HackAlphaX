@@ -1,4 +1,3 @@
 # HackAlphaX
 
-###### Day 1
-Clone the repository locally, then use Python version 2.7 to run the Day1-main.py script
+Clone the repository locally, then use Python version 2.7 to run the desired script using `python {scriptname}.py` in the terminal
