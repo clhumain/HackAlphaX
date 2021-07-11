@@ -16,12 +16,14 @@ Even and `[2,7]` | Not Awkward
 Even and `[9,22]` | Awkward
 Even and `]22,1000]` | Not Awkward
 
-![Day 2 - Terminal](https://imgur.com/a/FrBB140)
+![Day 1 - Terminal]
+(https://imgur.com/a/FrBB140)
 
 ##### Day 2 - PROJECT
 Building from the work done in Day 1, the calculator's functionalities are moved into a user-defined function and includes the following new functions: factorial, square root, and logarithm. Included a real use case of recursion in calculating factorials.
 
-![Day 1 - Terminal](https://imgur.com/a/xSbVH1t)
+![Day 2 - Terminal]
+(https://imgur.com/a/xSbVH1t)
 
 ## Day 3
 ##### HOW-TO
@@ -33,12 +35,15 @@ At the bottom right of the window appears three buttons relating to the three le
 
 **Easy**: there are no tricks and the user can freely click the 'Easy' button and hear the sound effect.
 
-![Easy Difficulty](https://imgur.com/a/YwIkRFF)
+![Easy Difficulty]
+(https://imgur.com/a/YwIkRFF)
 
 **Medium**: the 'Easy' button will try to avoid the mouse by moving away from the mouse. It is still possible to click the button and hear the sound effect.
 
-![Medium Difficulty](medium-difficulty.gif)
+![Medium Difficulty]
+(medium-difficulty.gif)
 
 **Hard/Impossible**: the final difficulty makes hearing the sound effect impossible by turning the cursor invisible when hovering over the 'Easy' button and disabling the ability to click on the button.
 
-![Hard Difficulty](https://imgur.com/a/ZDdbQ5U)
+![Hard Difficulty]
+(https://imgur.com/a/ZDdbQ5U)
