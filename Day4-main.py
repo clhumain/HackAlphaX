@@ -100,10 +100,10 @@ def my_calculator_func(first, second, operationSymbol):
         solution = first - second
 
     elif operationSymbol == 'x':  # Multiplication function
-        solution = 1.0 * first * second
+        solution = first * second
 
     elif operationSymbol == '/':  # Division function
-        solution = 1.0 * first / second  # Multiply by 1.0 so result is a double (avoid precision loss)
+        solution = first / second  # Multiply by 1.0 so result is a double (avoid precision loss)
 
     elif operationSymbol == '^':  # Exponential function
         solution = first ** second
@@ -270,9 +270,9 @@ class OperatorButton(pygame.sprite.Sprite):
             return
 
         if second is None:  # Calculate using only one value
-            answer = my_calculator_func2(firstVal, op)
+            answer = my_calculator_func2(first, op)
         else:  # Calculate using two values
-            answer = my_calculator_func(firstVal, secondVal, op)
+            answer = my_calculator_func(first, second, op)
         # Print answer
         outputTextArea.update()
         if type(answer) is str:
@@ -311,10 +311,17 @@ class NumberButton(pygame.sprite.Sprite):
                     firstVal = float(outputTextArea.text + str(text))
                     firstNum = True
                     print(firstVal)
+
                 # Update output
                 outputTextArea.update(text)
+                if type(outputTextArea.text) is str:
+                    firstVal = float(outputTextArea.text)
+                else:
+                    firstVal = outputTextArea.text
             elif firstNum and not operation:  # still first number but following digits
                 if type(text) is not str:
+                    outputTextArea.update(str(text))
+                else:
                     outputTextArea.update(text)
 
                 if type(outputTextArea.text) is str:
@@ -329,7 +336,7 @@ class NumberButton(pygame.sprite.Sprite):
                 # All following digits
                 if type(text) is not str:
                     outputTextArea.update(str(text))
-                    secondVal = outputTextArea.text
+                    secondVal = float(outputTextArea.text)
                 else:
                     outputTextArea.update(text)
                     secondVal = float(outputTextArea.text)
