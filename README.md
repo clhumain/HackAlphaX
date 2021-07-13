@@ -50,7 +50,7 @@ Clone the repository locally using Git with command `git clone {repo-url}`, then
 ##### PROJECT
 Turning the calculator program built during days 1 and 2 into a GUI based calculator. To start this challenge, a UI was designed to lead the development process.
 
-<img src="images/HackAlphaX-Day4-UIdesign.pdf">
+![](images/HackAlphaX-Day4-UIdesign.jpeg)
 
 Following this, the UI was developed fully including all relevant buttons and text outputs before linking them to the calculator functions previously developed. One feature developed but not previously conceptualized was the 'CLEAR' button which was placed with the equal button for ease of modification. In the end a satisfying calculator implementing all previously developed functions (addition, subtraction, multiplication, division, exponentiation, factorial, square root, and logarithm) was created as demonstrated below.
 
